@@ -1,17 +1,11 @@
-import { Header, SocialLinks, Footer } from "./components";
-import Routes from "./routes";
-import {BrowserRouter} from "react-router-dom"
+import Layout from "./routes/layout";
+import { BrowserRouter } from "react-router-dom";
 function App() {
-  return (
-    <BrowserRouter>
-    <div className="App bg-slate-800 text-white min-h-screen h-screen ">
-      <Header />
-      <Routes />
-      <SocialLinks />
-      <Footer />
-    </div>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <Layout></Layout>
+        </BrowserRouter>
+    );
 }
 
 export default App;
